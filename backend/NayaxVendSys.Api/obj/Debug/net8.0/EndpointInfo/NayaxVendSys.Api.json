@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "VendSys DEX API",
+    "description": "API for processing DEX files from vending machines",
+    "version": "v1"
+  },
+  "paths": {
+    "/vdi-dex": {
+      "post": {
+        "tags": [
+          "NayaxVendSys.Api"
+        ],
+        "operationId": "SaveDex",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NayaxVendSys.Api.Models.DexRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "NayaxVendSys.Api.Models.DexRequest": {
+        "required": [
+          "dexContent",
+          "machine"
+        ],
+        "type": "object",
+        "properties": {
+          "machine": {
+            "minLength": 1,
+            "pattern": "^[AB]$",
+            "type": "string"
+          },
+          "dexContent": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Basic": {
+        "type": "http",
+        "description": "Basic Authorization header. Example: 'Basic base64(username:password)'",
+        "scheme": "Basic"
+      }
+    }
+  },
+  "security": [
+    {
+      "Basic": [ ]
+    }
+  ]
+}

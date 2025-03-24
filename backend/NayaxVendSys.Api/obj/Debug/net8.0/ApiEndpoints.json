@@ -1,0 +1,25 @@
+[
+  {
+    "ContainingType": "NayaxVendSys.Api.Endpoints.DexEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDexEndpoints\u003Eb__0_0",
+    "RelativePath": "vdi-dex",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NayaxVendSys.Api.Models.DexRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "SaveDex"
+  }
+]

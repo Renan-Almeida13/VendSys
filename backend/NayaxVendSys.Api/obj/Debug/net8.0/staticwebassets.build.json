@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "s7/Q0j03xrqncUDeLzYaUDtxh9xQelZxjiX1AAjIIMk=",
+  "Source": "NayaxVendSys.Api",
+  "BasePath": "_content/NayaxVendSys.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
